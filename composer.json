@@ -1,0 +1,15 @@
+{
+    "name": "lucas/petshop",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas",
+            "email": "lucass.camillo@gmail.com"
+        }
+    ],
+    "require": {}
+}
