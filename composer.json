@@ -2,7 +2,9 @@
     "name": "lucas/petshop",
     "autoload": {
         "psr-4": {
-            "app\\": "app/"
+            "App\\": "src/",
+            "Core\\": "core/"
+
         }
     },
     "authors": [
