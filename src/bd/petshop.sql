@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/06/2024 às 23:32
+-- Tempo de geração: 27/06/2024 às 23:51
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -44,7 +44,6 @@ CREATE TABLE `appointments` (
 
 CREATE TABLE `clients` (
   `id` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL,
   `pet_name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -52,12 +51,12 @@ CREATE TABLE `clients` (
 -- Despejando dados para a tabela `clients`
 --
 
-INSERT INTO `clients` (`id`, `email`, `pet_name`) VALUES
-(17, '', NULL),
-(20, '', NULL),
-(21, '', NULL),
-(22, '', NULL),
-(23, '', NULL);
+INSERT INTO `clients` (`id`, `pet_name`) VALUES
+(17, NULL),
+(20, NULL),
+(21, NULL),
+(22, NULL),
+(23, NULL);
 
 -- --------------------------------------------------------
 
@@ -67,7 +66,6 @@ INSERT INTO `clients` (`id`, `email`, `pet_name`) VALUES
 
 CREATE TABLE `employees` (
   `id` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL,
   `specialty` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -75,11 +73,11 @@ CREATE TABLE `employees` (
 -- Despejando dados para a tabela `employees`
 --
 
-INSERT INTO `employees` (`id`, `email`, `specialty`) VALUES
-(1, 'lucas.camilo@example.com', 'Veterinário'),
-(2, 'nathaly.sousa@example.com', 'Veterinária'),
-(3, 'jose.washington@example.com', 'Banho e Tosa'),
-(4, 'vovo.dora@example.com', 'Pet Walker');
+INSERT INTO `employees` (`id`, `specialty`) VALUES
+(1, 'Veterinário'),
+(2, 'Veterinária'),
+(3, 'Banho e Tosa'),
+(4, 'Pet Walker');
 
 -- --------------------------------------------------------
 
