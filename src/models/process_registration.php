@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $name = htmlspecialchars($_POST["username"]);
     $phone = htmlspecialchars($_POST["phone"]);
+    $petname = htmlspecialchars($_POST["petname"]);
 
     // Verificar se o email já está cadastrado
     $checkStmt = $conn->prepare("SELECT id, email FROM users WHERE email = ?");
@@ -21,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Email já cadastrado, exibir mensagem de erro
         echo '<script>';
         echo 'alert("Este email já está cadastrado. Por favor, use outro email.");';
-        echo 'window.location.href = "/../petshop/public/index.php?page=registration";';
+        echo 'window.location.href = "../../public/index.php?page=registration";';
         echo '</script>';
         exit();
     }
@@ -33,19 +34,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmtUsers->execute()) {
         $userId = $stmtUsers->insert_id;
 
-        $stmtClients = $conn->prepare("INSERT INTO clients (id) VALUES (?)");
-        $stmtClients->bind_param("i", $userId);
+        $stmtClients = $conn->prepare("INSERT INTO clients (id, pet_name) VALUES (?,?)");
+        $stmtClients->bind_param("is", $userId, $petname);
 
         if ($stmtClients->execute()) {
             echo '<script>';
             echo 'alert("Cadastro realizado com sucesso!");';
-            echo 'window.location.href = "/../petshop/public/index.php?page=login";';
+            echo 'window.location.href = "../../public/index.php?page=login";';
             echo '</script>';
             exit();
         } else {
             echo '<script>';
             echo 'alert("Erro ao cadastrar o cliente: ' . $conn->error . '");';
-            echo 'window.location.href = "/../petshop/public/index.php?page=registration";';
+            echo 'window.location.href = "../../public/index.php?page=registration";';
             echo '</script>';
         }
 
@@ -55,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Exibe mensagem de erro caso haja problema ao cadastrar o usuário
         echo '<script>';
         echo 'alert("Erro ao cadastrar o usuário: ' . $conn->error . '");';
-        echo 'window.location.href = "/../petshop/public/index.php?page=registration";';
+        echo 'window.location.href = "../../public/index.php?page=registration";';
         echo '</script>';
     }
 

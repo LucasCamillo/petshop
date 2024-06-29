@@ -23,14 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             echo '<script>';
             echo 'alert("Login Realizado com sucesso.");';
-            echo 'window.location.href = "/../petshop/public/index.php?page=home";';
+            echo 'window.location.href = "../../public/index.php?page=home";';
             echo '</script>';
             exit();
         } else {
 
             echo '<script>';
             echo 'alert("Senha incorreta, tente novamente.");';
-            echo 'window.location.href = "/../petshop/public/index.php?page=login";';
+            echo 'window.location.href = "../../public/index.php?page=login";';
             echo '</script>';
             exit();
         }
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo '<script>';
             echo 'alert("Usuário não encontrado, verifique se o email está correto");';
-            echo 'window.location.href = "/../petshop/public/index.php?page=login";';
+            echo 'window.location.href = "../../public/index.php?page=login";';
             echo '</script>';
         exit();
     }

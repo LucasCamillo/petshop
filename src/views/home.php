@@ -10,18 +10,18 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/animate.css">
+	<link rel="stylesheet" href="../public/css/animate.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="/petshop/public/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="/petshop/public/css/magnific-popup.css">
+	<link rel="stylesheet" href="../public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../public/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../public/css/magnific-popup.css">
 
 
-	<link rel="stylesheet" href="/petshop/public/css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="/petshop/public/css/jquery.timepicker.css">
+	<link rel="stylesheet" href="../public/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="../public/css/jquery.timepicker.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/flaticon.css">
-	<link rel="stylesheet" href="/petshop/public/css/style.css">
+	<link rel="stylesheet" href="../public/css/flaticon.css">
+	<link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
 					<li  class="nav-item dropdown" ><a href="index.php?page=login" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sua Conta</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<?php if ($userLoggedIn): ?>	
-								<a class="dropdown-item" href="/../petshop/src/models/process_logout.php">Logout</a>
+								<a class="dropdown-item" href="../src/models/process_logout.php">Logout</a>
 								<a class="dropdown-item" href="index.php?page=appointments">Agendamentos</a>
 							<?php else: ?>
 								<a class="dropdown-item" href="index.php?page=login">Login</a>
@@ -84,7 +84,7 @@
 			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
 				<div class="col-md-11 ftco-animate text-center">
 					<h1 class="mb-4">Cuidados da mais alta qualidade para seus amiguinhos</h1>
-					<p><a href="#" class="btn btn-primary mr-md-4 py-3 px-4" href="index.php?page=about">Mais sobre nós<span class="ion-ios-arrow-forward"></span></a></p>
+					<p><a class="btn btn-primary mr-md-4 py-3 px-4" href="index.php?page=about">Mais sobre nós<span class="ion-ios-arrow-forward"></span></a></p>
 				</div>
 			</div>
 		</div>
@@ -94,7 +94,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 d-flex align-self-stretch px-4 ftco-animate">
-					<div class="d-block services active text-center">
+					<div class="d-block services text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="flaticon-blind"></span>
 						</div>

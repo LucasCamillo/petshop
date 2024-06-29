@@ -10,18 +10,18 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/animate.css">
+	<link rel="stylesheet" href="../public/css/animate.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="/petshop/public/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="/petshop/public/css/magnific-popup.css">
+	<link rel="stylesheet" href="../public/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../public/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../public/css/magnific-popup.css">
 
 
-	<link rel="stylesheet" href="/petshop/public/css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="/petshop/public/css/jquery.timepicker.css">
+	<link rel="stylesheet" href="../public/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="../public/css/jquery.timepicker.css">
 
-	<link rel="stylesheet" href="/petshop/public/css/flaticon.css">
-	<link rel="stylesheet" href="/petshop/public/css/style.css">
+	<link rel="stylesheet" href="../public/css/flaticon.css">
+	<link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
 					<li  class="nav-item dropdown" ><a href="index.php?page=login" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sua Conta</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<?php if ($userLoggedIn): ?>	
-								<a class="dropdown-item" href="/../petshop/src/models/process_logout.php">Logout</a>
+								<a class="dropdown-item" href="../src/models/process_logout.php">Logout</a>
 								<a class="dropdown-item" href="index.php?page=appointments">Agendamentos</a>
 							<?php else: ?>
 								<a class="dropdown-item" href="index.php?page=login">Login</a>
@@ -78,7 +78,7 @@
 		</div>
 	</nav>
 	<!-- END nav -->
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('/petshop/public/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end">
