@@ -1,10 +1,8 @@
 <?php
 session_start();
 
-// Limpa todas as variáveis de sessão
 $_SESSION = array();
 
-// Se desejar, também pode destruir a sessão
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(session_name(), '', time() - 42000,
@@ -13,11 +11,13 @@ if (ini_get("session.use_cookies")) {
     );
 }
 
-// Destroi a sessão
+
 session_destroy();
 
-// Redireciona para a página inicial ou página de login
-header('Location: /../petshop/public/index.php?page=home');
+echo '<script>';
+echo 'alert("Logout Realizado.");';
+echo 'window.location.href = "../../public/index.php?page=home";';
+echo '</script>';
 exit();
 ?>
 
