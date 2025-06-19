@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\Controller\HomeController;
+require_once __DIR__ . '/../vendor/autoload.php'; // Autoload do Composer
 
-$controller = new HomeController();
-$controller->index();
+use App\Core\Core;
+
+Core::run();

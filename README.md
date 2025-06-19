@@ -32,12 +32,16 @@
 
 <p align="justify">
 
-  EM CONSTRUÇÃO
+  Este projeto é a construção de um web site com integração com banco de dados
 </p>
 
 ## Funcionalidades
 
- EM CONSTRUÇÃO
+Criar Cadastro
+Login
+Consultar agendamentos
+Criar agendamentos
+Cancelar agendamentos
 
 ## Aplicação
 
